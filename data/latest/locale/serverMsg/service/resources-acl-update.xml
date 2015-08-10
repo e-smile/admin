@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root id="service:resources-acl-update">
+    <section type="success" id="aclModified">
+        <p xml:lan="en">acl succesfully modified</p>
+    </section>
+    <section type="error" id="aclNotModified">
+        <p xml:lan="en">could not modify acl</p>
+    </section>
+</root>

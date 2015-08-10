@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta xmlns="http://exist-db.org/xquery/repo">
+    <description>e-smile admnistration</description>
+    <author>Christophe Geiser</author>
+    <website>www.e-smile.org</website>
+    <status>alpha</status>
+    <license>GNU-LGPL</license>
+    <copyright>true</copyright>
+    <type>application</type>
+    <category>core</category>
+    <target>esmile/admin</target>
+    <prepare>pre-install.xql</prepare>
+    <finish>pre-install.xql</finish>
+    <deployed>2015-02-24T12:59:46.206+01:00</deployed>
+    <github>https://github.com/e-smile/admin</github>
+    <tags/>
+</meta>

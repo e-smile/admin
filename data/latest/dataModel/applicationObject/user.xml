@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<applicationObject xmlns:sen="http://www.sencha.com" xmlns:xf="http://www.w3.org/2002/xforms" applicationArea="" id="user">
+    <user xfa="user"/>
+    <fullName xfa="fullName"/>
+    <description xfa="description"/>
+    <password xfa="password"/>
+    <disabled xfa="dsiabled" type="bool"/>
+    <umask xfa="umask"/>
+    <groups repeat="true" edge="isGroupFor" lookupRef="group"/>
+</applicationObject>

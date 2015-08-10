@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div>
+    <h2>Admin App</h2>
+    <p>Application for all administrative-related tasks for e-smile:</p>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a href="#ux-id-administer-applications">
+                <i class="fa fa-cubes"/> Administration of installed Apps</a>
+        </li>
+        <li class="list-group-item">
+            <a href="#ux-id-administer-applications">
+                <i class="fa fa-database"/> Administration of Monitoring Spaces</a>
+        </li>
+        <li class="list-group-item">
+            <a href="#ux-id-administer-applications">
+                <i class="fa fa-users"/> Users and User Groups</a>
+        </li>
+        <li class="list-group-item">
+            <a href="#ux-id-administer-applications">
+                <i class="fa fa-user-plus"/> User Rights on available resources</a>
+        </li>
+    </ul>
+    <div data-template-path="~/../../../ux-help/{app.lan}/admin-app-admin-app.xml" data-template="tplu:include"/>
+    <div data-template-path="~/../../../ux-help/{app.lan}/admin-data-admin-data.xml" data-template="tplu:include"/>
+    <div data-template-path="~/../../../ux-help/{app.lan}/admin-user-admin-user.xml" data-template="tplu:include"/>
+    <div data-template-path="~/../../../ux-help/{app.lan}/admin-rights-admin-rights.xml" data-template="tplu:include"/>
+    <figure data-template="site:expand-links">
+        <img itemprop="image" src="{es-admin}/resources/images/admin.png" alt="" class="img-responsive img-rounded"/>
+        <figcaption>Screen capture of the <strong>Admin App</strong>
+        </figcaption>
+    </figure>
+</div>

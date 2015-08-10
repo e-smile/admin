@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="ct-ux-id-administer-users">
+    <h2 id="ux-id-administer-users" data-text-short="Administer Users" data-text-summary="and User Groups">
+        <i class="fa fa-users"/> Administer Users <small>and User Groups</small>
+    </h2>
+    <p>Add or remove users, and groups, decide who is belonging to which group and modify user and group metadata.</p>
+</div>

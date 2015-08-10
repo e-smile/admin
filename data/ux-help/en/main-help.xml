@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="ct-welcome-to-e-smile-admin-module">
+    <h2 id="ux-id-welcome-to-e-smile-admin-module" data-text-short="Welcome to e-smile Admin Module">Welcome to e-smile Admin Module</h2>
+    <h3 id="ux-id-what-is-this-module" data-text-short="What is this ?">What is this Module ?</h3>
+    <p>The admin module - as the name suggests - allows e-smile global administration. It contains 4 components: </p>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a href="#ux-id-administer-applications">
+                <i class="fa fa-cubes"/> Administration of installed Apps</a>
+        </li>
+        <li class="list-group-item">
+            <a href="#ux-id-administer-applications">
+                <i class="fa fa-database"/> Administration of Monitoring Spaces</a>
+        </li>
+        <li class="list-group-item">
+            <a href="#ux-id-administer-applications">
+                <i class="fa fa-users"/> Users and User Groups</a>
+        </li>
+        <li class="list-group-item">
+            <a href="#ux-id-administer-applications">
+                <i class="fa fa-user-plus"/> User Rights on available resources</a>
+        </li>
+    </ul>
+    <div data-template-path="~/admin-app-admin-app.xml" data-template="tplu:include"/>
+    <div data-template-path="~/admin-data-admin-data.xml" data-template="tplu:include"/>
+    <div data-template-path="~/admin-user-admin-user.xml" data-template="tplu:include"/>
+    <div data-template-path="~/admin-rights-admin-rights.xml" data-template="tplu:include"/>
+    <div data-template-path="/../common/data/view/ux-help/how-to-use-help.xml" data-template="tplu:include"/>
+</div>

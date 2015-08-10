@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:sen="http://www.sencha.com" xmlns:xf="http://www.w3.org/2002/xforms" getBy="id">
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="/db/es.dev/data/repository/dataModel/aoGenProcessing.xml">
+        <xi:fallback>
+            <fallback>no access</fallback>
+        </xi:fallback>
+    </xi:include>
+    <applicationArea id="msManagement">
+        <applicationObject id="msConfiguration">
+            <dataModel/>
+        </applicationObject>
+    </applicationArea>
+</root>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+    <body xml:lang="en">
+        <label>admin-acl-type</label>
+    </body>
+    <items>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="items/ALLOWED.xml">
+            <xi:fallback>
+                <item id="ALLOWED">
+                    <fallback>no access</fallback>
+                </item>
+            </xi:fallback>
+        </xi:include>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="items/DENIED.xml">
+            <xi:fallback>
+                <item id="DENIED">
+                    <fallback>no access</fallback>
+                </item>
+            </xi:fallback>
+        </xi:include>
+    </items>
+</item>

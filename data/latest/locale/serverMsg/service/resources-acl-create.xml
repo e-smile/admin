@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root id="service:resources-acl-create">
+    <section type="success" id="aclCreated">
+        <p xml:lan="en">acl succesfully created</p>
+    </section>
+    <section type="error" id="aclNotCreated">
+        <p xml:lan="en">could not create acl</p>
+    </section>
+</root>

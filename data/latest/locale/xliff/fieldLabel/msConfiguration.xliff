@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="2.0" srcLang="en">
+    <file id="fieldLabel">
+        <notes/>
+        <unit id="applicationObject">
+            <segment>
+                <source xml:lang="en">applicationObject</source>
+                <target xml:lang="fr">applicationObject</target>
+            </segment>
+        </unit>
+        <unit id="structureItem">
+            <segment>
+                <source xml:lang="en">structureItem</source>
+                <target xml:lang="fr">structureItem</target>
+            </segment>
+        </unit>
+        <unit id="allowListen">
+            <segment>
+                <source xml:lang="en">allowListen</source>
+                <target xml:lang="fr">allowListen</target>
+            </segment>
+        </unit>
+        <unit id="contains">
+            <segment>
+                <source xml:lang="en">contains</source>
+                <target xml:lang="fr">contient</target>
+            </segment>
+        </unit>
+        <unit id="applicationData">
+            <segment>
+                <source xml:lang="en">applicationData</source>
+                <target xml:lang="fr">Application Data</target>
+            </segment>
+        </unit>
+        <unit id="configuration">
+            <segment>
+                <source xml:lang="en">configuration</source>
+                <target xml:lang="fr">configuration</target>
+            </segment>
+        </unit>
+        <unit id="status">
+            <segment>
+                <source xml:lang="en">status</source>
+                <target xml:lang="fr">statut</target>
+            </segment>
+        </unit>
+        <unit id="monitoringSpaceId">
+            <segment>
+                <source xml:lang="en">monitoringSpaceId</source>
+                <target xml:lang="fr">monitoringSpaceId</target>
+            </segment>
+        </unit>
+        <unit id="state">
+            <segment>
+                <source xml:lang="en">state</source>
+                <target xml:lang="fr">état</target>
+            </segment>
+        </unit>
+        <unit id="listenTo">
+            <segment>
+                <source xml:lang="en">listenTo</source>
+                <target xml:lang="fr">Ecouter</target>
+            </segment>
+        </unit>
+        <unit id="f_1">
+            <segment>
+                <source xml:lang="en">ms</source>
+                <target xml:lang="fr">Mlle</target>
+            </segment>
+        </unit>
+    </file>
+</xliff>

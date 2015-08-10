@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="ct-ux-id-user-and-user-groups-rights">
+    <h2 id="ux-id-user-and-user-groups-rights" data-text-short="User and User Groups Rights" data-text-summary="Decide who has access to which part of the data">
+        <i class="fa fa-user-plus"/> User and User Groups Rights <small>Decide who has access to which part of the data</small>
+    </h2>
+    <p>Fine-grained control on who can access, modify or execute available resources.</p>
+</div>

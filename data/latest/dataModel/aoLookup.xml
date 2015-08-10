@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root rootPath="dataContent/">
+    <process>
+        <common>
+            <field name="value" mapping="../@id"/>
+            <field name="lastUpdate" mapping="../process/@lastUpdate"/>
+        </common>
+    </process>
+    <lookups id="user"/>
+    <lookups id="group"/>
+    <lookups id="msConfiguration"/>
+</root>

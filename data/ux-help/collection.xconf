@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://exist-db.org/collection-config/1.0">
+    <triggers>
+        <trigger class="org.exist.collections.triggers.XQueryTrigger">
+            <parameter name="url" value="xmldb:exist://db/apps/esmile/common/modules/triggers/titleIds.xql" bindingPrefix="local"/>
+            <parameter name="prefix" value="ux-id" bindingPrefix="local"/>
+        </trigger>
+    </triggers>
+</collection>

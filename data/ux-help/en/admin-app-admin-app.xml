@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="ct-administer-applications">
+    <h2 data-text-short="Administer Applications " data-text-summary="Add, remove or update e-smile packages" id="ux-id-administer-applications">
+        <i class="fa fa-cubes"/> Administer Applications <small>Add, remove or update e-smile packages</small>
+    </h2>
+    <p>e-smile consists of a set of application modules that can be added, upgraded or removed, depending on the actual needs in terms of information management. The <strong>Administer Apps</strong> component is where this all happens.</p>
+</div>

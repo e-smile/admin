@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="ct-ux-id-admin-app-switchviewbutton">
+    <h2 id="ux-id-button-switch-type-of-view" data-text-short="admin-app-switchViewButton">Button switch : type of View</h2>
+    <p>Switch the type of view for the package list. Either : </p>
+    <p>
+        <ul>
+            <li>List view (default), or</li>
+            <li>Grid view</li>
+        </ul>
+    </p>
+</div>

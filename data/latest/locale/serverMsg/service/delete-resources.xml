@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root id="service:delete-resources">
+    <section type="success" id="resourceDeleted">
+        <p xml:lan="en">the resource has succesfully deleted</p>
+    </section>
+    <section type="error" id="resourceNotDeleted">
+        <p xml:lan="en">the resource could not be deleted</p>
+    </section>
+</root>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root id="service:resources-acl-delete">
+    <section type="success" id="aclDeleted">
+        <p xml:lan="en">acl succesfully deleted</p>
+    </section>
+    <section type="error" id="aclNotDeleted">
+        <p xml:lan="en">could not delete acl</p>
+    </section>
+</root>

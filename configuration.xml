@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <js>
+        <appClass>E.apps.Admin</appClass>
+    </js>
+    <!-- <repositories>
+        <repository active="true">
+            <label>my public public repo</label>
+            <url>http://localhost:8088/public-repo</url>
+            <url>http://wd_test.e-smile.org/public-repo</url>
+        </repository>
+    </repositories> -->
+    <state>
+        <dataModelDate>2015-05-26T10:26:11.425+02:00</dataModelDate>
+        <appModelDate>2015-04-10T07:46:19.945+02:00</appModelDate>
+        <dateFormat>yyyy-MM-dd</dateFormat>
+        <!-- <mode>production</mode> -->
+        <mode>dev</mode>
+        <lang>en</lang>
+    </state>
+</configuration>

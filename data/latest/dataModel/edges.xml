@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root getBy="id">
+    <processing>
+        <classGen type="edgeSettings" classType="config" rootEl="edges" startContentEl="content" path="//edge[not(@inverse)]" target="d.js-edgeSettings" insideType="edges" ns="xforms.mgr" register="E.xforms.mgr.EdgeSettingsMgr"/>
+    </processing>
+    <content>
+        <edges id="user">
+            <edge id="group/user" idref="" subject="user" verb="" object="group"/>
+        </edges>
+    </content>
+</root>

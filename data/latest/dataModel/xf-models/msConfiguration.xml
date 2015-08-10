@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xf:model xmlns:xliff="urn:oasis:names:tc:xliff:document:2.0" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sen="http://www.sencha.com" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:reference="http://www.sencha.com/reference" applicationArea="msManagement" id="msConfiguration" lastUpdate="2015-05-26T10:26:11.491+02:00" currentVersion="">
+    <xf:instance _pT="no" area="" id="msConfiguration">
+        <msConfiguration entityName="msConfiguration">
+            <configuration>
+                <status/>
+                <monitoringSpaceId/>
+                <contains>
+                    <structureItem>true</structureItem>
+                    <applicationObject>true</applicationObject>
+                    <applicationData>true</applicationData>
+                </contains>
+                <allowListen>
+                    <structureItem>true</structureItem>
+                    <applicationObject>false</applicationObject>
+                    <applicationData>false</applicationData>
+                </allowListen>
+                <state>
+                    <listenTo>
+                        <ms/>
+                    </listenTo>
+                </state>
+            </configuration>
+        </msConfiguration>
+    </xf:instance>
+    <xliff:xliff version="2.0" srcLang="en">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../locale/xliff/msConfiguration" xpointer="xpointer(//file)">
+            <xi:fallback>
+                <item>no xliff file available</item>
+            </xi:fallback>
+        </xi:include>
+    </xliff:xliff>
+    <xf:extra xmlns="http://www.w3.org/1999/xhtml"/>
+    <xf:bind nodeset="configuration" xfa="config">
+        <xf:bind nodeset="status" xfa="status" xliff:fieldLabel="statusConfig" xliff:message="status" isAttribute="true"/>
+        <xf:bind nodeset="monitoringSpaceId" xfa="monitoringSpaceId" reference="MonitoringSpace" unique="true"/>
+        <xf:bind nodeset="contains" xfa="contains" label="contains" xliff:message="contains" xtype="fo_formgroup">
+            <xf:bind nodeset="structureItem" xfa="structureItem" label="structureItem" type="bool" xtype="checkbox">true</xf:bind>
+            <xf:bind nodeset="applicationObject" xfa="applicationObject" label="applicationObject" type="bool" xtype="checkbox">true</xf:bind>
+            <xf:bind nodeset="applicationData" xfa="applicationData" label="applicationData" type="bool" xtype="checkbox">true</xf:bind>
+        </xf:bind>
+        <xf:bind nodeset="allowListen" xfa="allowlisten" label="allowListen" xtype="fo_formgroup">
+            <xf:bind nodeset="structureItem" xfa="a_structureItem" label="structureItem" xtype="checkbox" relevant="1">true</xf:bind>
+            <xf:bind nodeset="applicationObject" xfa="a_applicationObject" label="applicationObject" xtype="checkbox" relevant="2">false</xf:bind>
+            <xf:bind nodeset="applicationData" xfa="a_applicationData" label="applicationData" xtype="checkbox" relevant="3">false</xf:bind>
+        </xf:bind>
+        <xf:bind nodeset="state" xfa="state">
+            <xf:bind nodeset="listenTo" xfa="listenTo">
+                <xf:bind nodeset="ms" xfa="state_ms" reference.type="MonitoringSpace" reference.manyToMany="#MonitoringSpace" reference.association="msConfigurationListenToMonitoringSpace" reference.role="monitoringSpaces"/>
+            
+                           <!--  <xf:bind nodeset="ms" xfa="state_ms" reference.type="MonitoringSpace" reference.__manyToMany="#MonitoringSpace" reference.association="msConfigurationListenToMonitoringSpace" reference.role="monitoringSpaces"/> -->
+            </xf:bind>
+        </xf:bind>
+    </xf:bind>
+</xf:model>

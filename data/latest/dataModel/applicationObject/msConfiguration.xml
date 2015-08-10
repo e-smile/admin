@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<applicationObject xmlns:xliff="urn:oasis:names:tc:xliff:document:2.0" xmlns:sen="http://www.sencha.com" xmlns:xf="http://www.w3.org/2002/xforms" applicationArea="msManagement" id="msConfiguration">
+    <configuration xfa="config">
+        <status xfa="status" xliff:fieldLabel="statusConfig" xliff:message="status" isAttribute="true"/>
+        <monitoringSpaceId xfa="monitoringSpaceId" reference="MonitoringSpace" unique="true"/>
+        <contains xfa="contains" label="contains" xliff:message="contains" xtype="fo_formgroup">
+            <structureItem xfa="structureItem" label="structureItem" type="bool" xtype="checkbox">true</structureItem>
+            <applicationObject xfa="applicationObject" label="applicationObject" type="bool" xtype="checkbox">true</applicationObject>
+            <applicationData xfa="applicationData" label="applicationData" type="bool" xtype="checkbox">true</applicationData>
+        </contains>
+        <allowListen xfa="allowlisten" label="allowListen" xtype="fo_formgroup">
+            <structureItem xfa="a_structureItem" label="structureItem" xtype="checkbox" relevant="../../contains/structureItem='true'">true</structureItem>
+            <applicationObject xfa="a_applicationObject" label="applicationObject" xtype="checkbox" relevant="../../contains/applicationObject='true'">false</applicationObject>
+            <applicationData xfa="a_applicationData" label="applicationData" xtype="checkbox" relevant="../../contains/applicationData='true'">false</applicationData>
+        </allowListen>
+        <state xfa="state">
+            <listenTo xfa="listenTo">
+                <ms xmlns:reference="http://www.sencha.com/reference" xfa="state_ms" reference="MonitoringSpace" reference:association="msConfigurationListenToMonitoringSpace" reference:role="monitoringSpace"/>
+            </listenTo>
+        </state>
+    </configuration>
+</applicationObject>

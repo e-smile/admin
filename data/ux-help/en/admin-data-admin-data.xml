@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="ct-ux-id-administer-data">
+    <h2 id="ux-id-administer-data" data-text-short="Administer Data">
+        <i class="fa fa-database"/> Administer Data</h2>
+    <p>Data managed by the application follow the same patterns as applications : data also consists of packages that can be added, removed or modified. </p>
+    <p>This component guide the administrator to perfrom those tasks.</p>
+</div>

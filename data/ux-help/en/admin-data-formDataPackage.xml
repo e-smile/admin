@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="ct-ux-id-admin-data-formdatapackage">
+    <h2 id="ux-id-data-package-properties" data-text-short="admin-data-formDataPackage">Data Package properties</h2>
+    <p>Used to view and edit data packages properties. </p>
+    <p>One important feature for data packages is the ability <strong>to listen to other data packages</strong>. When a package listen to another one, it inherits its data from the data package being listened to.</p>
+    <p/>
+</div>

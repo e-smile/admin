@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns="http://e-smile.org/common/resource-map" path="">
+    <data>
+        <appResources>
+            <res id="admin-acl-type" name="admin-acl-type.xml"/>
+            <res id="admin-acl-target" name="admin-acl-target.xml"/>
+        </appResources>
+    </data>
+</root>

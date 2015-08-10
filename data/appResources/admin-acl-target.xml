@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+    <body xml:lang="en">
+        <label>admin-acl-target</label>
+    </body>
+    <items>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="items/USER.xml">
+            <xi:fallback>
+                <item id="USER">
+                    <fallback>no access</fallback>
+                </item>
+            </xi:fallback>
+        </xi:include>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="items/GROUP.xml">
+            <xi:fallback>
+                <item id="GROUP">
+                    <fallback>no access</fallback>
+                </item>
+            </xi:fallback>
+        </xi:include>
+    </items>
+</item>

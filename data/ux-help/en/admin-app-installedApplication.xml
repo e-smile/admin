@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="ct-ux-id-admin-app-installedapplication">
+    <h2 id="ux-id-view-of-installed-application-packages" data-text-short="admin-app-installedApplication">View of installed Application Packages</h2>
+    <p>This view only displays installed application packages. Click on one item to activate it.</p>
+    <p>Each application package can be removed or upgraded - when a newer package is available.</p>
+</div>

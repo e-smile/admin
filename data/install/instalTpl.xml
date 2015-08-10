@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<log>
+    <header>Set of instruction while installing the application</header>
+    <section>
+        <header>Review resources rigths</header>
+        <div>TODO, using dbu:index and dbu:fixup as in /db/apps/es-display/post-install.xql</div>
+    </section>
+</log>

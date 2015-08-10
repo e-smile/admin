@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="ct-ux-id-admin-app-updateinstalledpackage">
+    <h2 id="ux-id-upgrade-button" data-text-short="admin-app-updateInstalledPackage">Upgrade Button</h2>
+    <p>Click to Upgrade a selected Application to a newer version. </p>
+    <p>This button in active only when a newer version is available.</p>
+</div>

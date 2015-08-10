@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root id="service:resources-update">
+    <section type="success" id="resourceModified">
+        <p xml:lan="en">resource succesfully modified</p>
+    </section>
+    <section type="error" id="resourceNotModified">
+        <p xml:lan="en">could not modify resource</p>
+    </section>
+</root>

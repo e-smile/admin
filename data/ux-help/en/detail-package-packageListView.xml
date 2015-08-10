@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="ct-ux-id-package-item">
+    <h2 id="ux-id-package-item" data-text-short="Package Item">Package Item</h2>
+    <p>Package item represents a package, eiher installed or available for installation.</p>
+    <div class="img-container">
+        <ol class="marker">
+            <li style="top:20%;left:8%"/>
+            <li style="top:20%;left:31%"/>
+            <li style="top:20%;left:70%"/>
+            <li style="top:20%;left:90%"/>
+            <li style="top:40%;left:90%"/>
+            <li style="top:50%;left:103%"/>
+            <li style="top:80%;left:32%"/>
+            <li style="top:80%;left:60%"/>
+            <li style="top:80%;left:86%"/>
+        </ol>
+        <img src="$resources/images/dashboard-item.png" class="img-thumbnail" alt="example of package item"/>
+    </div>
+    <p>Legend :</p>
+    <ol class="legend small">
+        <li>Package icon</li>
+        <li>Package Title</li>
+        <li>Display more infomation on the package</li>
+        <li>Buttons to remove/upgrade/add pacakge</li>
+        <li>Link to source code</li>
+        <li>Type of package. It can be <em>Application</em>, <em>Data</em> or <em>Library</em>
+        </li>
+        <li>Package license</li>
+        <li>Actual version</li>
+        <li>Link to the package web-site</li>
+    </ol>
+</div>

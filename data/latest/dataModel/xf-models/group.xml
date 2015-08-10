@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xf:model xmlns:xliff="urn:oasis:names:tc:xliff:document:2.0" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sen="http://www.sencha.com" xmlns:xf="http://www.w3.org/2002/xforms" applicationArea="" id="group" lastUpdate="2015-05-26T10:26:11.491+02:00" currentVersion="">
+    <xf:instance _pT="no" area="" id="group">
+        <group entityName="group">
+            <group/>
+        </group>
+    </xf:instance>
+    <xliff:xliff version="2.0" srcLang="en">
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../../locale/xliff/group" xpointer="xpointer(//file)">
+            <xi:fallback>
+                <item>no xliff file available</item>
+            </xi:fallback>
+        </xi:include>
+    </xliff:xliff>
+    <xf:extra xmlns="http://www.w3.org/1999/xhtml"/>
+    <xf:bind nodeset="group" xfa="group"/>
+</xf:model>

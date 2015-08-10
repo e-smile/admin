@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="ct-ux-id-admin-app-removeinstalledpackage">
+    <h2 id="ux-id-remove-package-button" data-text-short="admin-app-removeInstalledPackage">Remove Package Button</h2>
+    <p>Click to remove an installed Application.</p>
+    <p>This button is activated only when a selected package can be removed. </p>
+</div>

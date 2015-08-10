@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="ct-ux-id-admin-data-installeddatapackages">
+    <h2 id="ux-id-installed-data-packages" data-text-short="admin-data-installedDataPackages">Installed Data Packages</h2>
+    <p>View which data packages are installed. The second <code>switch button</code> allows to view data-package hierarch in a network graph.</p>
+    <ol class="marker">
+        <li style="top: 25%;left: 59%;"/>
+        <li style="top: 44%;left: 74%;"/>
+        <li style="top: 37%;left: 78%;"/>
+    </ol>
+    <img src="$resources/images/link-monitoring-space.png" class="img-thumbnail" alt="Link between data packages"/>
+    <ol class="legend small">
+        <li>First Data Package </li>
+        <li>second Data Package </li>
+        <li>Link between two Data Packages. The First Data Package would inherit all data from the second data Package,</li>
+    </ol>
+</div>

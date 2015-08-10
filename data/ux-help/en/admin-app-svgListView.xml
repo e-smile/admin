@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="ct-ux-id-admin-app-svglistview">
+    <h2 id="ux-id-installed-application-item" data-text-short="admin-app-svgListView">Installed Application Item</h2>
+    <p>One item of an Installed application package. </p>
+    <p>Activate (to remove or upgrade) by clicking on the item.</p>
+</div>
