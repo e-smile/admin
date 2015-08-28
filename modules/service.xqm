@@ -1,10 +1,10 @@
-xquery version "3.0";
+xquery version "3.1";
 
 (:module namespace service="http://exist-db.org/apps/dashboard/service";:)
 module namespace service="http://e-smile.org/es-admin/service";
 
 import module namespace sm = "http://exist-db.org/xquery/securitymanager";
-import module namespace xqjson="http://xqilla.sourceforge.net/lib/xqjson";
+(:import module namespace xqjson="http://xqilla.sourceforge.net/lib/xqjson";:)
 (:import module namespace glc = "http://e-smile.org/common/config" at "../../common/modules/config.xqm";:)
 import module namespace msg="http://e-smile.org/common/msg" at "../../common/modules/msg.xqm";
 import module namespace e = "http://e-smile.org/common/errors" at "/db/apps/esmile/common/modules/errors.xqm";
@@ -169,14 +169,19 @@ function service:resource-xml($path as xs:string, $name as xs:string?, $is-colle
 };
  
 declare %private function service:resources-update($data, $id) {
-    let $data := xqjson:parse-json(util:base64-decode($data))
+(:    let $data := xqjson:parse-json(util:base64-decode($data)):)
 (:    let $log := util:log-system-out($data):)
-    
-    let $owner :=  $data//pair[@name="owner"],
-        $group :=  $data//pair[@name="group"],
-        $permission := $data//pair[@name="permission"],
-        $mime :=   $data//pair[@name="mime"]
-    
+ 
+(:    let $owner :=  $data//pair[@name="owner"],:)
+(:        $group :=  $data//pair[@name="group"],:)
+(:        $permission := $data//pair[@name="permission"],:)
+(:        $mime :=   $data//pair[@name="mime"]:)
+    let $data := parse-json(util:base64-decode($data))   
+    let $owner :=  $data?owner,
+        $group :=  $data?group,
+        $permission := $data?permission,
+        $mime :=   $data?mime
+        
     let $permission := if(ends-with($permission, "+")) then (substring-before($permission, "+")) else $permission 
         
     let $process := function($arg, $fn) {
@@ -306,12 +311,18 @@ declare %private function service:resources-acl-delete($path as xs:string, $inde
 };
 
 declare %private function  service:resources-acl-create( $path, $data) {
-     let $data := xqjson:parse-json(util:base64-decode($data)),
-        $target := $data//pair[@name="target"],
-        $type := ($data//pair[@name="access_type"] = 'ALLOWED'),
-        $who := $data//pair[@name="who"],
-        $mode := $data//pair[@name="mode"]
-        
+(:     let $data := xqjson:parse-json(util:base64-decode($data)),:)
+(:        $target := $data//pair[@name="target"],:)
+(:        $type := ($data//pair[@name="access_type"] = 'ALLOWED'),:)
+(:        $who := $data//pair[@name="who"],:)
+(:        $mode := $data//pair[@name="mode"]:)
+    
+    let $data := parse-json(util:base64-decode($data))   
+    let $target := $data?target,
+        $type :=($data?access_type = 'ALLOWED'),
+        $who := $data?who,
+        $mode := $data?mode
+    
      let $add := if($target = "GROUP") 
                 then sm:add-group-ace($path, $who, $type, $mode) 
                 else sm:add-user-ace($path, $who, $type, $mode)
@@ -323,8 +334,9 @@ declare %private function  service:resources-acl-create( $path, $data) {
 
 declare %private function service:resources-acl-update($path as xs:string, $index as xs:string, $data) {
     let $ace := sm:get-permissions(xs:anyURI($path))//sm:ace[@index = $index]
-    let $data := xqjson:parse-json(util:base64-decode($data))
-    let $log := util:log-system-out($data)
+(:    let $data := xqjson:parse-json(util:base64-decode($data)):)
+    let $data := parse-json(util:base64-decode($data))   
+(:    let $log := util:log-system-out($data):)
 (:    let $error :=  error($service:NO_ACE, "Access Control List empty for  " || $path || " " || $index):)
     return 
         if(empty($ace)) 
@@ -333,10 +345,14 @@ declare %private function service:resources-acl-update($path as xs:string, $inde
             )
         else (
             let $index := xs:integer($index),
-             $target := $data//pair[@name="target"],
-             $type := ($data//pair[@name="access_type"] = 'ALLOWED'),
-             $who := $data//pair[@name="who"],
-             $mode := $data//pair[@name="mode"] 
+                $target := $data?target,
+                $type :=($data?access_type = 'ALLOWED'),
+                $who := $data?who,
+                $mode := $data?mode
+(:             $target := $data//pair[@name="target"],:)
+(:             $type := ($data//pair[@name="access_type"] = 'ALLOWED'),:)
+(:             $who := $data//pair[@name="who"],:)
+(:             $mode := $data//pair[@name="mode"] :)
             
             let $add := if($target = "GROUP") 
                 then sm:insert-group-ace($path,$index , $who, $type, $mode) 
@@ -472,18 +488,28 @@ function service:save-permissions($data, $id as xs:string,$appKey, $user, $token
         let $login := security:login-attempt($user, $password,  $token, $session, $appKey)
     
     let $log := util:log-system-out(('DATA: ', $data))
-    let $recv-permissions := xqjson:parse-json(util:base64-decode($data)),
+(:    let $recv-permissions := xqjson:parse-json(util:base64-decode($data)),:)
+    let $recv-permissions := parse-json(util:base64-decode($data)),
         $path := service:id-to-path($id)
     return
     
+(:        let $cs :=:)
+(:            if($recv-permissions/pair[@name eq "id"] eq "User") then:)
+(:                ("u", if($recv-permissions/pair[@name eq "special"] eq "true") then "+s" else "-s"):)
+(:            else if($recv-permissions/pair[@name eq "id"] eq "Group") then:)
+(:                ("g", if($recv-permissions/pair[@name eq "special"] eq "true") then "+s" else "-s"):)
+(:            else if($recv-permissions/pair[@name eq "id"] eq "Other") then:)
+(:                ("o", if($recv-permissions/pair[@name eq "special"] eq "true") then "+t" else "-t"):)
+(:            else(),:)
         let $cs :=
-            if($recv-permissions/pair[@name eq "id"] eq "User") then
-                ("u", if($recv-permissions/pair[@name eq "special"] eq "true") then "+s" else "-s")
-            else if($recv-permissions/pair[@name eq "id"] eq "Group") then
-                ("g", if($recv-permissions/pair[@name eq "special"] eq "true") then "+s" else "-s")
-            else if($recv-permissions/pair[@name eq "id"] eq "Other") then
-                ("o", if($recv-permissions/pair[@name eq "special"] eq "true") then "+t" else "-t")
+            if($recv-permissions?id eq "User") then
+                ("u", if($recv-permissions?special eq "true") then "+s" else "-s")
+            else if($recv-permissions?id eq "Group") then
+                ("g", if($recv-permissions?special eq "true") then "+s" else "-s")
+            else if($recv-permissions?id eq "Other") then
+                ("o", if($recv-permissions?special eq "true") then "+t" else "-t")
             else(),
+
             
         $c := $cs[1], (: received class :)
         $s := $cs[2], (: received special :)
