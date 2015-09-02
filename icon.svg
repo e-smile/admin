@@ -53,10 +53,7 @@
 	    display: none;
 	} -->
     </style>
-    <defs>
-       
-        
-    </defs>
+    <defs/>
     <path class="es-icon-circle" d="m509.9988-4.543a513.0897,513.0897 0 1,1 -1026.1793,0 513.0897,513.0897 0 1,1 1026.1793,0z" transform="matrix(.97449 0 0 .97449 503.01205 506.0663)"/>
     <g>
         <g class="es-app-icon" transform="matrix(3.0315614,0,0,3.0315614,56.170311,348.56367)">
@@ -131,9 +128,7 @@
         </g>
         <g id="icon-text-content" class="es-icon-text es-icon-subtitle" letter-spacing="0">
             <text dx="410" dy="650" class="icon-text-content-a">admin</text>
-        </g>
-
-		<!--g fill="#fff" class="es-icon-text es-icon-subtitle" letter-spacing="0">
+        </g><!--g fill="#fff" class="es-icon-text es-icon-subtitle" letter-spacing="0">
 			<text dx="410" dy="650" class="icon-text-content-a">Application </text>
 			<text dx="410" dy="730" class="icon-text-content-b">Manager</text>
 		</g-->

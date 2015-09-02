@@ -120,7 +120,8 @@ else if (ends-with($exist:resource, ".html")) then (
                 <set-header name="App-Token" value="{$init('token')}"/>
                 <set-header name="App-Counter" value="{$init('counter')}"/>
                 <set-attribute  name="{$common-config:resource.path}" value="{$path}"/>
-
+                <set-header name="Access-Control-Allow-Origin" value="https://www.e-smile.org"/> 
+                <set-header name="Access-Control-Allow-Origin" value="https://e-smile.org"/>
             </forward>
         </view>
 		<error-handler>

@@ -5,6 +5,7 @@
         <unit id="group">
             <segment>
                 <source xml:lang="en">group</source>
+                <target xml:lang="fr">groupe</target>
             </segment>
         </unit>
     </file>

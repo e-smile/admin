@@ -5,31 +5,37 @@
         <unit id="user">
             <segment>
                 <source xml:lang="en">user</source>
+                <target xml:lang="fr">utilisateur</target>
             </segment>
         </unit>
         <unit id="fullName">
             <segment>
                 <source xml:lang="en">fullName</source>
+                <target xml:lang="fr">nom et prénom</target>
             </segment>
         </unit>
         <unit id="description">
             <segment>
                 <source xml:lang="en">description</source>
+                <target xml:lang="fr">description</target>
             </segment>
         </unit>
         <unit id="password">
             <segment>
                 <source xml:lang="en">password</source>
+                <target xml:lang="fr">mot de passe</target>
             </segment>
         </unit>
         <unit id="dsiabled">
             <segment>
                 <source xml:lang="en">disabled</source>
+                <target xml:lang="fr">handicapé</target>
             </segment>
         </unit>
         <unit id="umask">
             <segment>
                 <source xml:lang="en">umask</source>
+                <target xml:lang="fr">umask</target>
             </segment>
         </unit>
     </file>

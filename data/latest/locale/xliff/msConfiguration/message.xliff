@@ -2,16 +2,14 @@
 <xliff version="2.0" srcLang="en">
     <file id="message">
         <notes/>
-        <unit id="status">
-            <segment>
-                <source xml:lang="en">status</source>
-                <target xml:lang="fr">statut</target>
-            </segment>
-        </unit>
         <unit id="contains">
             <segment>
                 <source xml:lang="en">contains</source>
-                <target xml:lang="fr">contient</target>
+            </segment>
+        </unit>
+        <unit id="status">
+            <segment>
+                <source xml:lang="en">status</source>
             </segment>
         </unit>
     </file>

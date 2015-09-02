@@ -5,71 +5,85 @@
         <unit id="statusConfig">
             <segment>
                 <source xml:lang="en">statusConfig</source>
+                <target xml:lang="fr">statusConfig</target>
             </segment>
         </unit>
         <unit id="config">
             <segment>
                 <source xml:lang="en">configuration</source>
+                <target xml:lang="fr">configuration</target>
             </segment>
         </unit>
         <unit id="monitoringSpaceId">
             <segment>
                 <source xml:lang="en">monitoringSpaceId</source>
+                <target xml:lang="fr">monitoringSpaceId</target>
             </segment>
         </unit>
         <unit id="contains">
             <segment>
                 <source xml:lang="en">contains</source>
+                <target xml:lang="fr">contient</target>
             </segment>
         </unit>
         <unit id="structureItem">
             <segment>
-                <source xml:lang="en">structureItem</source>
+                <source xml:lang="en">structure item</source>
+                <target xml:lang="fr">Structure article</target>
             </segment>
         </unit>
         <unit id="applicationObject">
             <segment>
                 <source xml:lang="en">applicationObject</source>
+                <target xml:lang="fr">applicationObject</target>
             </segment>
         </unit>
         <unit id="applicationData">
             <segment>
-                <source xml:lang="en">applicationData</source>
+                <source xml:lang="en">application data</source>
+                <target xml:lang="fr">les données d'application</target>
             </segment>
         </unit>
         <unit id="allowlisten">
             <segment>
-                <source xml:lang="en">allowListen</source>
+                <source xml:lang="en">allow listen</source>
+                <target xml:lang="fr">permettre à écouter</target>
             </segment>
         </unit>
         <unit id="a_structureItem">
             <segment>
-                <source xml:lang="en">structureItem</source>
+                <source xml:lang="en">structure Item</source> 
+                <target xml:lang="fr">la structure de l'article</target>
             </segment>
         </unit>
         <unit id="a_applicationObject">
             <segment>
                 <source xml:lang="en">applicationObject</source>
+                <target xml:lang="fr">applicationObject</target>
             </segment>
         </unit>
         <unit id="a_applicationData">
             <segment>
                 <source xml:lang="en">applicationData</source>
+                <target xml:lang="fr">Application Data</target>
             </segment>
         </unit>
         <unit id="state">
             <segment>
                 <source xml:lang="en">state</source>
+                <target xml:lang="fr">état</target>
             </segment>
         </unit>
         <unit id="listenTo">
             <segment>
                 <source xml:lang="en">listenTo</source>
+                <target xml:lang="fr">Ecouter</target>
             </segment>
         </unit>
         <unit id="state_ms">
             <segment>
                 <source xml:lang="en">ms</source>
+                <target xml:lang="fr">Mlle</target>
             </segment>
         </unit>
     </file>

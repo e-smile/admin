@@ -2,8 +2,7 @@
 <configuration>
     <js>
         <appClass>E.apps.Admin</appClass>
-    </js>
-    <!-- <repositories>
+    </js><!-- <repositories>
         <repository active="true">
             <label>my public public repo</label>
             <url>http://localhost:8088/public-repo</url>
@@ -13,9 +12,9 @@
     <state>
         <dataModelDate>2015-05-26T10:26:11.425+02:00</dataModelDate>
         <appModelDate>2015-04-10T07:46:19.945+02:00</appModelDate>
-        <dateFormat>yyyy-MM-dd</dateFormat>
-        <!-- <mode>production</mode> -->
+        <dateFormat>yyyy-MM-dd</dateFormat><!-- <mode>production</mode> -->
         <mode>dev</mode>
         <lang>en</lang>
+        <version>latest</version>
     </state>
 </configuration>

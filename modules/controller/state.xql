@@ -23,13 +23,13 @@ try {
     let $app := config:app-name() 
     let $state := state:get($app)
 
-    let $log := util:log-system-out(("state : app ", $app))  
+(:    let $log := util:log-system-out(("state : app ", $app))  :)
     (:let $log := util:log-system-out(("requestData ",request:get-data()))  :)
     (:let $log := util:log-system-out(("session:  ",session:get-id()))  :)
 
 
     let $check-init := if(empty($state)) (:if state is empty, we need to initiate it:)
-        then (state:init($app,(config:app-state(),  $config:expath-descriptor))) 
+        then (state:init($app,($config:expath-descriptor,config:app-state()))) 
         else ($state)
     let $state := if($method = "POST") 
         then (state:set($app, mapxt:request-to-map())) 

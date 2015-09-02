@@ -21,17 +21,12 @@
 		}
 		<!-- .es-icon-globe {
 		    display: none;
-		} -->
-	<!--     .es-icon-globe, .es-icon-circle, .es-icon-text {
+		} --><!--     .es-icon-globe, .es-icon-circle, .es-icon-text {
 	    display: none;
 	} -->
     </style>
-    <defs>
-       
-        
-    </defs>
-    <path fill="#1c3c57" class="es-icon-circle" d="m509.9988-4.543a513.0897,513.0897 0 1,1 -1026.1793,0 513.0897,513.0897 0 1,1 1026.1793,0z" transform="matrix(.97449 0 0 .97449 503.01205 506.0663)"/>
-    <!-- <g>
+    <defs/>
+    <path fill="#1c3c57" class="es-icon-circle" d="m509.9988-4.543a513.0897,513.0897 0 1,1 -1026.1793,0 513.0897,513.0897 0 1,1 1026.1793,0z" transform="matrix(.97449 0 0 .97449 503.01205 506.0663)"/><!-- <g>
         <g fill="#fff" class="es-app-icon" transform="matrix(3.0315614,0,0,3.0315614,56.170311,348.56367)">
             <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="resources/images/app-icon.svg">
                 <xi:fallback>
@@ -84,9 +79,7 @@
         </g>
         <g fill="#fff" id="icon-text-content" class="es-icon-text es-icon-subtitle" letter-spacing="0">
             <text dx="410" dy="650" class="icon-text-content-a"/>
-        </g>
-
-		<!--g fill="#fff" class="es-icon-text es-icon-subtitle" letter-spacing="0">
+        </g><!--g fill="#fff" class="es-icon-text es-icon-subtitle" letter-spacing="0">
 			<text dx="410" dy="650" class="icon-text-content-a">Application </text>
 			<text dx="410" dy="730" class="icon-text-content-b">Manager</text>
 		</g-->

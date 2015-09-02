@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<apps>
-    
-<!--
+<apps><!--
     <group>
         <meta>
             <title>Admin Web Application</title>
@@ -14,8 +12,7 @@
         <app></app>
         <app></app>
     </group>
--->
-    <!-- <app status="installed" removable="no">
+--><!-- <app status="installed" removable="no">
         <title>Java Admin Client</title>
         <abbrev>webstart</abbrev>
         <version>1.0</version>
@@ -30,8 +27,7 @@
         <icon>plugins/browsing/images/icon.png</icon>
         <url>plugin:browsing</url>
         <type>plugin</type>
-    </app> -->
-<!--     <app status="installed" role="dba">
+    </app> --><!--     <app status="installed" role="dba">
     <title>e-smile</title>
     <abbrev>es-common</abbrev>
     <version>beta</version>
@@ -55,8 +51,7 @@
         <icon>plugins/backup/images/icon.png</icon>
         <url>plugin:backup</url>
         <type>plugin</type>
-    </app>
-   <!--  <app status="installed" role="dba">
+    </app><!--  <app status="installed" role="dba">
        <title>Package Manager</title>
        <abbrev>packageManager</abbrev>
        <version>1.0</version>
@@ -79,8 +74,7 @@
        <icon>plugins/userManager/icon.png</icon>
        <url>plugin:userManager</url>
        <type>plugin</type>
-   </app> -->
-    <!--app status="installed" role="dba">
+   </app> --><!--app status="installed" role="dba">
         <title>Query Profiling</title>
         <abbrev>profiling</abbrev>
         <version>1.0</version>

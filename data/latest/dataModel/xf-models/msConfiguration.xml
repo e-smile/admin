@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xf:model xmlns:xliff="urn:oasis:names:tc:xliff:document:2.0" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sen="http://www.sencha.com" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:reference="http://www.sencha.com/reference" applicationArea="msManagement" id="msConfiguration" lastUpdate="2015-05-26T10:26:11.491+02:00" currentVersion="">
+<xf:model xmlns:reference="http://www.sencha.com/reference" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xliff="urn:oasis:names:tc:xliff:document:2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:sen="http://www.sencha.com" xmlns:xf="http://www.w3.org/2002/xforms" applicationArea="msManagement" id="msConfiguration" lastUpdate="2015-05-26T10:26:11.491+02:00" currentVersion="">
     <xf:instance _pT="no" area="" id="msConfiguration">
         <msConfiguration entityName="msConfiguration">
             <configuration>
@@ -46,9 +46,7 @@
         </xf:bind>
         <xf:bind nodeset="state" xfa="state">
             <xf:bind nodeset="listenTo" xfa="listenTo">
-                <xf:bind nodeset="ms" xfa="state_ms" reference.type="MonitoringSpace" reference.manyToMany="#MonitoringSpace" reference.association="msConfigurationListenToMonitoringSpace" reference.role="monitoringSpaces"/>
-            
-                           <!--  <xf:bind nodeset="ms" xfa="state_ms" reference.type="MonitoringSpace" reference.__manyToMany="#MonitoringSpace" reference.association="msConfigurationListenToMonitoringSpace" reference.role="monitoringSpaces"/> -->
+                <xf:bind nodeset="ms" xfa="state_ms" reference.type="MonitoringSpace" reference.manyToMany="#MonitoringSpace" reference.association="msConfigurationListenToMonitoringSpace" reference.role="monitoringSpaces"/><!--  <xf:bind nodeset="ms" xfa="state_ms" reference.type="MonitoringSpace" reference.__manyToMany="#MonitoringSpace" reference.association="msConfigurationListenToMonitoringSpace" reference.role="monitoringSpaces"/> -->
             </xf:bind>
         </xf:bind>
     </xf:bind>
